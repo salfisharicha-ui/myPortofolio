@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Biodata Diri</title>
+
+<style>
+body{
+margin:0;
+font-family:'Segoe UI', sans-serif;
+min-height:100vh;
+
+background-image:url("bg.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+/* floating shapes */
+.shape{
+position:absolute;
+border-radius:50%;
+filter:blur(60px);
+opacity:.5;
+animation:float 10s infinite ease-in-out;
+}
+
+.shape1{width:220px;height:220px;background:#7dd3fc;top:80px;left:10%;}
+.shape2{width:250px;height:250px;background:#f9a8d4;bottom:60px;right:10%;animation-delay:3s;}
+
+@keyframes float{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-30px)}
+}
+
+/* header */
+header{
+margin-top:60px;
+font-size:36px;
+font-weight:700;
+color:#0f172a;
+animation:fadeDown .9s ease;
+text-align:center;   
+width:100%;
+}
+
+/* card */
+.card{
+background-image:url("bacground.jpg");
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.card{
+position:relative;
+}
+
+.card::before{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.35);
+border-radius:28px;
+}
+
+.card > *{
+position:relative;
+}
+
+/* layout */
+.profile{
+display:flex;
+gap:25px;
+align-items:center;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+/* foto */
+img{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid white;
+box-shadow:0 15px 30px rgba(0,0,0,0.2);
+transition:.4s;
+margin-top: 20px;
+}
+
+img:hover{
+transform:scale(1.05);
+box-shadow:0 0 25px #7dd3fc;
+}
+
+/* text box highlight */
+.textBox{
+background:rgba(255,255,255,0.7);
+padding:18px 22px;
+border-radius:18px;
+backdrop-filter:blur(10px);
+}
+
+/* nama */
+.nama{
+font-size:28px;
+font-weight:700;
+color:#0f172a;
+}
+
+/* desc */
+.desc{
+margin-top:10px;
+line-height:1.7;
+color:#334155;
+}
+
+/* badge */
+.badge{
+margin-top:20px;
+display:inline-block;
+padding:8px 18px;
+border-radius:999px;
+background:linear-gradient(90deg,#38bdf8,#22c55e);
+color:white;
+font-size:14px;
+}
+
+/* footer */
+footer{
+margin:20px 0;
+color:#475569;
+animation:fadeUp 1.2s ease;
+text-align:center;   /* tengah */
+width:100%;
+}
+
+/* animations */
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(30px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+@keyframes fadeDown{
+from{opacity:0;transform:translateY(-30px)}
+to{opacity:1;transform:translateY(0)}
+}
+</style>
+</head>
+
+<body>
+
+<div class="shape shape1"></div>
+<div class="shape shape2"></div>
+
+<header>Biodata Diri</header>
+
+<div class="card">
+
+<div class="profile">
+
+<img src="foto biodata ica.jpg" alt="Foto">
+
+<div class="textBox">
+<div class="nama">Salfishar Wahyuputri</div>
+
+<div class="desc">
+Mahasiswa yang memiliki minat di bidang terapi gigi dan mulut. 
+Saya tertarik pada edukasi kesehatan masyarakat, perawatan gigi preventif, 
+serta pemanfaatan teknologi dalam manajemen pelayanan klinik gigi untuk meningkatkan kualitas pelayanan pasien. Saya senang belajar hal baru, bekerja sama dalam tim, dan terus mengembangkan kemampuan diri agar dapat memberikan manfaat bagi lingkungan sekitar. Dengan semangat belajar dan sikap tanggung jawab, saya berharap dapat meraih cita-cita serta berkontribusi positif di masa depan.
+</div>
+
+<div class="badge">🦷 Dentignite24</div>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+📍 Jl. Coppo Tompong, Pangkajene dan Kepulauan
+</footer>
+
+</body>
+</html>
